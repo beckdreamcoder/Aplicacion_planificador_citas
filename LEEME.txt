@@ -1,0 +1,19 @@
+UNA CITA CONTIGO — CÓDIGO FUENTE
+
+Extrae los archivos juntos y abre index.html para probar la página.
+Para compartir imagen y enlace, publica estos tres archivos en un hosting HTTPS. No requiere instalación ni servidor backend. Las tipografías usan internet; hay fuentes de reserva.
+
+HORARIOS
+Lunes a viernes bloqueados. Sábados: 12:00–19:00 inclusive. Domingos: desde 09:00 hasta el final del día (sin cierre indicado). El deslizador permite elegir la hora cada 15 minutos, con botones − / ＋ y hora visible en grande. Fechas pasadas y horas ya transcurridas bloqueadas. Se usa la hora local del dispositivo.
+
+WHATSAPP
+La tarjeta PNG se genera en el navegador. El botón comparte imagen y texto con enlace mediante el menú del sistema cuando navigator.share con archivos está disponible. Selecciona WhatsApp. El navegador y WhatsApp determinan si reciben ambos elementos. Si no se admite, se descarga la imagen; abre el mensaje en WhatsApp y adjunta el PNG manualmente. Un enlace wa.me no adjunta archivos automáticamente.
+Puedes guardar también el plan como archivo .ics. No hay reserva automática ni base de datos; ambos deben confirmar los detalles.
+
+PUBLICACIÓN PROPIA
+Si alojas la página en otra dirección, cambia la constante SITE_URL en app.js por tu URL pública para que el enlace compartido apunte a ella.
+
+ARCHIVOS
+index.html: estructura.
+style.css: diseño adaptable.
+app.js: calendario, horarios, botón No, imagen, compartir y archivo de calendario.

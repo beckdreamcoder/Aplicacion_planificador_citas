@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7f3eb"><meta name="description" content="Una pregunta pequeña. Un plan bonito. Una invitación para pasar tiempo contigo."><title>Una cita contigo ♡</title><link rel="stylesheet" href="style.css"></head>
+<body>
+
+<main>
+<section class="intro" id="intro">
+<div class="eyebrow"><span></span> </div>
+<div class="art" aria-hidden="true"><span class="spark spark-one">✧</span><span class="spark spark-two">✧</span><span class="tiny-heart">♡</span><div class="note"><span>Hola,</span><strong>Fabiana.</strong><i>♡</i></div><div class="envelope"><div class="flap"></div><span class="seal">♥</span></div><span class="art-caption">una invitación especial</span></div>
+<p class="salutation" id="salutation">Tengo una pregunta, para ti...</p>
+<h1>¿Quieres salir<br><em>conmigo?</em></h1>
+<p class="sub">Un ratito juntos, algo rico y muchas risas.<br>Tú eliges el plan.</p>
+<div class="playground" id="playground"><button class="primary" id="yes">Sí, ¡hagamos un plan! <span>↗</span></button><button class="no" id="no" type="button" tabindex="-1" aria-disabled="true">No 🙈</button></div>
+<p class="micro" id="hint" aria-live="polite">Psst… el “No” es un poquito tímido.</p>
+<button class="quiet" type="button" id="share-invite">💌 Compartir esta invitación</button><p class="micro" id="invite-status" aria-live="polite"></p><div class="promise"><span>♡ Sin presiones</span><span>✧ Con mucha ilusión</span><span>☀ Un plan a tu medida</span></div>
+</section>
+<section class="planner hidden" id="planner" aria-labelledby="plan-title">
+<button class="back" id="back">← Volver a la pregunta</button><div class="eyebrow">ESTO YA PINTA BONITO</div><h2 id="plan-title">Tú, yo y <em>un buen plan.</em></h2><p class="sub">Unos toques y listo. Vamos a armar un recuerdo bonito.</p><div class="planner-ribbon"><span></span><button type="button" id="lucky">✨ Inspírame un plan</button></div>
+<form id="date-form"><fieldset><legend><span>01</span> ¿Qué hacemos?</legend><div class="plans"><button class="plan selected" type="button" data-plan="Un cafecito" aria-pressed="true"><span class="plan-illustration coffee">☕</span><strong>Un cafecito</strong><small>Conversaciones sin reloj</small><i>↗</i></button><button class="plan" type="button" data-plan="Cena para dos" aria-pressed="false"><span class="plan-illustration">🍝</span><strong>Cena para dos</strong><small>Algo rico, mejor compañía</small><i>↗</i></button><button class="plan" type="button" data-plan="Un paseo" aria-pressed="false"><span class="plan-illustration">🌷</span><strong>Un paseo</strong><small>Caminar y ver qué pasa</small><i>↗</i></button><button class="plan" type="button" data-plan="¡Sorpréndeme!" aria-pressed="false"><span class="plan-illustration">✨</span><strong>¡Sorpréndeme!</strong><small>Me dejo llevar</small><i>↗</i></button></div></fieldset>
+<fieldset><legend><span>02</span> ¿Cuándo nos escapamos?</legend>
+<p class="field-help">Un fin de semana para nosotros. Elige uno de los días disponibles.</p>
+<div class="availability"><span>☀ Sábados · 12:00–19:00</span><span>♡ Domingos · desde las 09:00</span></div>
+<div class="calendar"><div class="calendar-head"><button type="button" id="prev-month" aria-label="Mes anterior">←</button><strong id="calendar-month" aria-live="polite"></strong><button type="button" id="next-month" aria-label="Mes siguiente">→</button></div><div class="calendar-week" aria-hidden="true"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div id="calendar-days" class="calendar-days" role="group" aria-label="Días del mes"></div></div>
+<input id="date" type="hidden"><p class="chosen-date" id="chosen-date" aria-live="polite">Elige un sábado o domingo ♡</p>
+<div class="time-picker"><label for="time-slider" class="time-label">¿A qué hora nos vemos?</label><output id="time-display" for="time-slider">Elige el día primero</output><div class="time-controls"><button type="button" id="time-minus" aria-label="Restar 15 minutos" disabled>−</button><input id="time-slider" type="range" min="720" max="1140" step="15" value="720" disabled aria-describedby="time-help"><button type="button" id="time-plus" aria-label="Sumar 15 minutos" disabled>＋</button></div><div class="time-limits"><span id="time-start">—</span><span id="time-end">—</span></div><p class="micro" id="time-help">Desliza o usa − / ＋ para cambiar de 15 en 15 minutos.</p><input id="time" type="hidden"></div><p id="availability-status" class="micro" aria-live="polite"></p></fieldset>
+<fieldset><legend><span>03</span> El toque especial</legend>
+<label>¿Dónde nos vemos? <small>(opcional)</small><input id="place" maxlength="120" placeholder="Escribe un lugar o elige una idea"></label><div class="chips" id="place-chips"><button type="button" data-place="Un café acogedor">Un café acogedor</button><button type="button" data-place="Tú eliges el lugar">Tú eliges</button><button type="button" data-place="Lo coordinamos juntos">Lo coordinamos</button></div>
+<label>Una notita para acompañar <small>(opcional)</small><textarea id="message" maxlength="300" rows="2" placeholder="Una pista, o un tengo permiso hasta.."></textarea></label></fieldset>
+
+<button type="submit" class="primary wide">Así me gusta el plan <span>♡</span></button><p class="micro">Todavía puedes cambiarlo antes de enviarlo.</p></form>
+</section>
+<section class="result hidden" id="result"><div class="eyebrow">UNA CITA, MUCHAS GANAS</div><h2>Tenemos <em>un plan.</em></h2><p class="sub">Ahora solo falta contarlo y coordinar los detalles.</p><div class="ticket"><div class="ticket-top"><span>INVITACIÓN PARA DOS</span><span>♡</span></div><h3 id="ticket-plan"></h3><div class="ticket-grid"><div><small>DÍA</small><strong id="ticket-date"></strong></div><div><small>HORA</small><strong id="ticket-time"></strong></div></div><p id="ticket-place"></p><p id="ticket-message"></p><div class="ticket-bottom">Tú + yo <span>un buen comienzo.</span></div></div><p class="countdown" id="countdown"></p><button class="primary wide whatsapp" id="send" type="button">Envíame por WhatsApp <span>↗</span></button><p class="micro" id="share-status" aria-live="polite">Elige WhatsApp en el menú de compartir y revisa el envío.</p><div class="result-tools"><button type="button" class="secondary" id="download-card">↓ Guardar invitación</button><button type="button" class="secondary" id="save-calendar">＋ Mi calendario</button></div><button class="quiet" id="text-only" type="button">Abrir mensaje en WhatsApp</button><p class="micro">La cita se confirma cuando ambos lo acuerden.</p><button class="quiet" id="change">Cambiar mi elección</button></section>
+
+</main>
+<footer><span>HECHO CON UN POQUITO DE VALENTÍA</span></footer>
+<div id="confetti" aria-hidden="true"></div>
+<script src="app.js"></script></body></html>
